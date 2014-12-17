@@ -13,11 +13,11 @@ public class GraficaNew extends Grafica {
 		Panel label = new Panel(new GridLayout(2,5)); nuovoArmadio.add(label);
 		Panel button = new Panel(new GridLayout(2,1)); nuovoArmadio.add(button);
 		
-		Label nome = new Label("Nome"); TextField nometext = new TextField();
-		Label MC = new Label("Max Camicie");TextField MCtext = new TextField();
-		Label MM = new Label("Max Maglie");TextField MMtext = new TextField();
-		Label MCi =new Label ("Max Citure");TextField MCitext = new TextField();
-		Label MP = new Label ("Max Pantaloni");TextField MPtext = new TextField();
+		Label nome = new Label("Nome"); TextField nometext = new TextField("");
+		Label MC = new Label("Max Camicie");TextField MCtext = new TextField("0");
+		Label MM = new Label("Max Maglie");TextField MMtext = new TextField("0");
+		Label MCi =new Label ("Max Citure");TextField MCitext = new TextField("0");
+		Label MP = new Label ("Max Pantaloni");TextField MPtext = new TextField("0");
 		Button inserisci = new Button("OK");
 			inserisci.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e){
